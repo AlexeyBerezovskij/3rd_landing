@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
+
+/* header */
+.contentheader {
+  margin: 0 auto 0 auto;
+  max-width: 1088px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  color: white; }
+
+.header {
+  background-color: #222b36;
+  font-family: Roboto, Arial, Helvetica, sans-serif; }
+
+.logo {
+  width: 139px;
+  height: 24px;
+  padding: 5%; }
+
+.menu {
+  text-align: center;
+  display: flex;
+  align-items: center; }
+
+.menu-element {
+  flex: 1;
+  padding: 10px;
+  width: 115px;
+  border-bottom: 2px solid #222b36; }
+  .menu-element:hover {
+    border-bottom: 2px solid #059bff;
+    transition: all 0.7s ease-out; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+/* main */
+.titlebox {
+  display: flex; }
