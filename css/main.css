@@ -3,18 +3,20 @@ body {
   font-family: 'Lato', sans-serif; }
 
 /* header */
-.contentheader {
+.header {
+  background-color: #222b36;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  position: fixed;
+  width: 100%; }
+
+.content-header {
   margin: 0 auto 0 auto;
-  max-width: 1088px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   color: white; }
-
-.header {
-  background-color: #222b36;
-  font-family: Roboto, Arial, Helvetica, sans-serif; }
 
 .logo {
   width: 139px;
@@ -27,18 +29,181 @@ body {
   align-items: center; }
 
 .menu-element {
-  flex: 1;
-  padding: 10px;
-  width: 115px;
+  max-width: 150px;
+  margin: 0 20px 0 20px;
+  text-align: center;
   border-bottom: 2px solid #222b36; }
   .menu-element:hover {
     border-bottom: 2px solid #059bff;
     transition: all 0.7s ease-out; }
 
+.sidebar-button {
+  display: none; }
+
+@media (max-width: 600px) {
+  .menu-element {
+    display: none; }
+  .sidebar-button {
+    display: inline-block;
+    max-width: 44px;
+    height: 30px;
+    padding-right: 15px; }
+  .sidebar-image {
+    width: 100%;
+    height: 100%; } }
+
 a {
   text-decoration: none;
   color: white; }
 
-/* main */
+.generaltitle {
+  margin-top: 60px;
+  padding: 1em;
+  font-size: 3em; }
+
 .titlebox {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 280px) {
+  .titlebox {
+    padding: 0;
+    width: 280px;
+    font-size: 0.5em; } }
+
+.selector-search {
+  display: flex;
+  max-width: 1040px;
+  height: 50px;
+  justify-content: space-between;
+  margin: 0 auto 0 auto; }
+
+.input {
+  color: #bfbfbf;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: white;
+  font-size: 1em; }
+
+.select {
+  width: 272px;
+  margin: 0 0 0 20px; }
+
+.search {
+  width: 362px;
+  margin: 0 20px 0 0; }
+
+@media (max-width: 768px) {
+  .selector-search {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50px 0; }
+    .selector-search .select {
+      width: 272px;
+      margin: 0 0 20px 0; }
+    .selector-search .search {
+      width: 272px;
+      margin: 0; } }
+
+.span {
+  padding: 10px;
+  font-size: 1.5em;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+@media (max-width: 768px) {
+  .span {
+    text-align: center; } }
+
+.cards-area {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+
+.card {
+  flex-basis: 180px;
+  height: 300px;
+  margin: 1%; }
+
+.image-card {
+  flex-basis: 180px;
+  height: 210px; }
+
+.image {
+  max-width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.description-card {
+  line-height: 1.5em;
+  font-size: 0.75em;
+  padding: 1em 0;
+  text-align: left;
+  flex-basis: 180px;
+  height: 90px; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222b36;
+  max-width: 100%; }
+
+.content-footer {
+  background-color: #222b36;
+  padding: 38px 42px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  color: white;
+  margin: 0 auto 0 auto; }
+
+.menu-contact-info {
+  display: flex;
+  max-width: 400px;
+  justify-content: space-between; }
+
+.top-menu-logo-contact {
+  width: 800px;
+  display: flex;
+  justify-content: space-between; }
+
+.buttom-copyright-privacy {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0 0; }
+
+.privacy-service {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  font-size: 14px; }
+
+.ul {
+  list-style-type: none; }
+  .ul li {
+    margin: 0 0 16px; }
+  .ul .community {
+    margin: 16px 0 8px; }
+
+.links {
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .buttom-copyright-privacy {
+    flex-direction: column-reverse; }
+    .buttom-copyright-privacy .copyright {
+      margin-top: 20px; }
+  .menu-contact-info {
+    flex-direction: column; }
+  .top-menu-logo-contact {
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px; } }
